@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نَفْس | لوحة توضيحية حديثة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="nafs.css">
+</head>
+<body data-theme="dark">
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-inner" role="navigation" aria-label="القائمة العلوية">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6ef3ff"/>
+                <stop offset="100%" stop-color="#7aa2ff"/>
+              </linearGradient>
+            </defs>
+            <path d="M12 2a10 10 0 1 0 10 10" stroke="url(#g1)" stroke-width="2"/>
+            <circle cx="12" cy="12" r="3.5" stroke="#12d6b5" stroke-width="2"/>
+          </svg>
+        </div>
+        <span>نَفْس</span>
+        <span class="pill">نسخة توضيحية</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features">المزايا</a>
+        <a href="#personas">الفئات</a>
+        <a href="#how">كيف يعمل</a>
+        <a href="#demo">العرض</a>
+        <a href="#privacy">الخصوصية</a>
+      </div>
+      <div class="actions">
+        <button class="btn-ghost btn" id="themeBtn" aria-label="تبديل السمة">🌙/☀️</button>
+        <button class="btn btn-primary" onclick="openModal()">طلب تجربة</button>
+        <button class="btn-icon menu-btn" id="menuBtn" aria-label="فتح قائمة الجوال">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="sheet">
+      <div class="kv" style="justify-content:space-between;align-items:center">
+        <div class="brand" style="gap:8px">
+          <div class="logo" aria-hidden="true" style="width:28px;height:28px"></div>
+          <b>القائمة</b>
+        </div>
+        <button class="btn-icon" id="menuClose" aria-label="إغلاق">✕</button>
+      </div>
+      <div class="list" style="margin-top:10px">
+        <a href="#features">المزايا</a>
+        <a href="#personas">الفئات</a>
+        <a href="#how">كيف يعمل</a>
+        <a href="#demo">العرض</a>
+        <a href="#privacy">الخصوصية</a>
+      </div>
+      <div class="kv" style="gap:10px;margin-top:12px">
+        <button class="btn" id="themeBtn2" aria-label="تبديل السمة">🌙/☀️</button>
+        <button class="btn btn-primary" onclick="openModal()">طلب تجربة</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="container hero-wrap">
+      <div class="hero-card" data-anim>
+        <span class="badge"><span class="pip"></span>تحليلات واحترام للخصوصية</span>
+        <h1>لوحة حديثة لعرض <span style="background:linear-gradient(90deg,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent">المؤشرات</span> بسهولة</h1>
+        <p class="lead">كل ما تحتاجه لتوضيح الأرقام والاتجاهات بسرعة، مع تجربة سلسة على الجوال وسطح المكتب.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" onclick="scrollToId('demo')">ابدأ العرض</button>
+          <button class="btn" onclick="scrollToId('features')">استكشف المزايا</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="tag">معدل الرضا</div><b id="c1">0%</b></div>
+          <div class="stat"><div class="tag">تقارير شهرية</div><b id="c2">0</b></div>
+          <div class="stat"><div class="tag">وقت التحديث</div><b>≤ 2s</b></div>
+        </div>
+      </div>
+      <div class="hero-preview" aria-hidden="true" data-anim="zoom">
+        <div class="preview-grid">
+          <div class="card" style="grid-column: span 2;"><div class="title">مؤشر جودة</div><div class="chip">اليوم: 92%</div></div>
+          <div class="card" style="grid-column: span 2;"><div class="title">نشاط المستخدم</div><div class="chip">+ 120</div></div>
+          <div class="card" style="grid-column: span 2;"><div class="title">أخطاء الأسبوع</div><div class="chip">منخفض</div></div>
+          <div class="card"><div class="title">تحويل</div><div class="chip">+14%</div></div>
+          <div class="card"><div class="title">جلسات</div><div class="chip">+9 د</div></div>
+          <div class="card" style="grid-column: span 2;"><div class="title">تشفير</div><div class="chip">AES-256</div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="container">
+      <div class="section-head" data-anim>
+        <h2>المزايا</h2>
+        <p class="section-desc">تجربة سريعة، تفاعلات ناعمة، واحترام للخصوصية</p>
+      </div>
+      <div class="features">
+        <div class="feature" data-anim><div class="kv"><span class="pill">خصوصية</span></div><h3>تحليلات بموافقة</h3><p>لا تتبع عدواني. نعرض الأهم فقط.</p></div>
+        <div class="feature" data-anim><div class="kv"><span class="pill">أداء</span></div><h3>خفيفة وسريعة</h3><p>بدون مكتبات ثقيلة. رسم بياني خالص.</p></div>
+        <div class="feature" data-anim><div class="kv"><span class="pill">التوافق</span></div><h3>RTL وجوال</h3><p>مصممة بعناية للغة العربية والهاتف.</p></div>
+        <div class="feature" data-anim><div class="kv"><span class="pill">التخصيص</span></div><h3>سِمات مرنة</h3><p>وضع ليلي/نهاري بلمسة واحدة.</p></div>
+        <div class="feature" data-anim><div class="kv"><span class="pill">سهولة</span></div><h3>فرز وبحث</h3><p>جدول تفاعلي بفرز وتصدير CSV.</p></div>
+        <div class="feature" data-anim><div class="kv"><span class="pill">جودة</span></div><h3>تجربة ناعمة</h3><p>Ripple وReveal وحركات دقيقة.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONAS -->
+  <section id="personas">
+    <div class="container">
+      <div class="section-head" data-anim>
+        <h2>لمن تصلح</h2>
+        <p class="section-desc">فرق المنتجات، التسويق، وصنّاع القرار</p>
+      </div>
+      <div class="personas">
+        <div class="persona" data-anim><span class="pill">مدير منتج</span><h3>قرارات أسرع</h3><p>تعرّف سريعًا على الحالة، واتخذ إجراءً بثقة.</p></div>
+        <div class="persona" data-anim><span class="pill">تسويق/نمو</span><h3>راقب التحويل</h3><p>تابع معدلات التحويل والأداء لحظيًا.</p></div>
+        <div class="persona" data-anim><span class="pill">تقني/أمان</span><h3>وضوح وخصوصية</h3><p>احترام البيانات مع مؤشرات تدقيق.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="container">
+      <div class="section-head" data-anim>
+        <h2>كيف يعمل</h2>
+        <p class="section-desc">خطوات بسيطة لعرض الأرقام</p>
+      </div>
+      <div class="how">
+        <div class="step" data-anim><div class="num">1</div><h3>تجميع</h3><p>نلخص البيانات دون تعقيد.</p></div>
+        <div class="step" data-anim><div class="num">2</div><h3>تنظيم</h3><p>نرتّب المقاييس لسهولة القراءة.</p></div>
+        <div class="step" data-anim><div class="num">3</div><h3>تصوّر</h3><p>رسم بياني واضح وسلس.</p></div>
+        <div class="step" data-anim><div class="num">4</div><h3>تفاعل</h3><p>بحث، فرز، تصدير، وتحديث حي.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DASHBOARD DEMO -->
+  <section id="demo">
+    <div class="container">
+      <div class="section-head" data-anim>
+        <h2>العرض التوضيحي</h2>
+        <p class="section-desc">مثال تفاعلي لمؤشرات ولوحة حالة</p>
+      </div>
+      <div class="dashboard">
+        <div class="panel tilt" data-anim>
+          <div class="kv" style="justify-content:space-between;align-items:center;margin-bottom:8px">
+            <h3 style="margin:0">الاتجاهات</h3>
+            <div class="toolbar kv" style="gap:8px">
+              <div class="seg" id="trendRange" role="tablist" aria-label="المدى">
+                <button class="btn" data-range="w" aria-selected="false" title="7 أيام">W</button>
+                <button class="btn" data-range="m" aria-selected="true" title="30 يومًا">M</button>
+              </div>
+              <button class="btn-icon" id="trendPlay" title="تشغيل/إيقاف" aria-label="تشغيل">▶</button>
+              <button class="btn-icon" id="trendDL" title="تنزيل PNG" aria-label="تنزيل">⤓</button>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="card tilt"><div class="title">جلسات</div><b class="kbd" id="m1">0</b><span class="tag">آخر ساعة</span></div>
+            <div class="card tilt"><div class="title">تذاكر</div><b class="kbd" id="m2">0</b><span class="tag">اليوم</span></div>
+            <div class="card tilt"><div class="title">تحويل</div><b class="kbd" id="m3">0%</b><span class="tag">هذا الأسبوع</span></div>
+          </div>
+          <div style="margin-top:14px">
+            <canvas id="trend" height="220" aria-label="مخطط الاتجاه" role="img"></canvas>
+          </div>
+        </div>
+        <div class="panel tilt" data-anim>
+          <div class="kv" style="justify-content:space-between;align-items:center;margin-bottom:8px">
+            <h3 style="margin:0">الحالة</h3>
+            <div class="toolbar kv" style="gap:8px">
+              <input class="btn" id="tblSearch" placeholder="بحث..." aria-label="بحث" style="min-width:160px" />
+              <button class="btn" id="tblReset" title="إعادة" aria-label="Reset">↺</button>
+              <button class="btn-icon" id="tblExport" title="CSV" aria-label="Export">⤓</button>
+            </div>
+          </div>
+          <div class="grid" style="grid-template-columns:1fr 1fr">
+            <div class="progress" style="--p:78" data-label="الجاهزية 78%"></div>
+            <div class="progress" style="--p:62" data-label="التغطية 62%"></div>
+          </div>
+          <div style="margin-top:14px;overflow:auto">
+            <table aria-label="جدول الحالات" id="dashTable">
+              <thead><tr>
+                <th data-sort>الاسم</th>
+                <th data-sort>القسم</th>
+                <th data-sort>الحالة</th>
+                <th>وسم</th>
+              </tr></thead>
+              <tbody>
+                <tr><td>د. سارة</td><td>المنظومة</td><td>نشطة</td><td><span class="pill">أساسي</span></td></tr>
+                <tr><td>م. علي</td><td>الدعم</td><td>متوسط</td><td><span class="pill" style="background:rgba(18,214,181,.18)">مستقر</span></td></tr>
+                <tr><td>أ. لينا</td><td>العمليات</td><td>مرتفع</td><td><span class="pill" style="background:rgba(122,162,255,.18)">مُراقَب</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY -->
+  <section id="privacy">
+    <div class="container">
+      <div class="section-head" data-anim>
+        <h2>الخصوصية</h2>
+        <p class="section-desc">نجمع أقل قدر ممكن من البيانات</p>
+      </div>
+      <div class="privacy">
+        <div class="panel" data-anim>
+          <h3>مبادئ أساسية</h3>
+          <div class="list">
+            <div class="li"><span class="pill">لا ملفات تعريف</span><div>بدون تتبع طرف ثالث أو ملفات تعريف.</div></div>
+            <div class="li"><span class="pill">شفافية</span><div>نعرض بوضوح ما يُجمع وكيف يُستخدم.</div></div>
+            <div class="li"><span class="pill">تحكم</span><div>إمكانية الانسحاب أو الحذف بسهولة.</div></div>
+          </div>
+        </div>
+        <div class="panel" data-anim>
+          <h3>المزيد</h3>
+          <div class="list">
+            <div class="li"><span class="pill">تجميع</span><div>يتم تجميع البيانات وإخفاء هويتها.</div></div>
+            <div class="li"><span class="pill">تخزين</span><div>تشفير في النقل والتخزين.</div></div>
+            <div class="li"><span class="pill">التوافق</span><div>جاهز لمتطلبات الامتثال الشائعة.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="container">
+      <div class="panel tilt" style="text-align:center" data-anim>
+        <h3>هل تريد لوحة مماثلة لمشروعك؟</h3>
+        <p class="section-desc">واجهة RTL، سريعة ومصقولة. جاهز للتكامل مع باك-إندك.</p>
+        <div class="cta">
+          <button class="btn btn-primary" onclick="openModal()">طلب تجربة</button>
+          <button class="btn" onclick="scrollTo(0,0)">عودة للأعلى</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
+      <div>© <span id="year"></span> نَفْس — واجهة توضيحية.</div>
+      <div class="tag">ملاحظة: هذه نسخة توضيحية بدون بيانات حقيقية.</div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="hide" role="dialog" aria-modal="true">
+    <div class="container" style="position:fixed;inset:0;padding:24px;display:grid;place-items:center;background:rgba(0,0,0,.55);backdrop-filter:blur(4px)">
+      <div class="panel tilt" style="max-width:680px;width:100%;position:relative">
+        <button class="btn-icon" style="position:absolute;inset-inline-start:12px;top:12px" onclick="closeModal()" aria-label="إغلاق">✕</button>
+        <h3>طلب تجربة</h3>
+        <p class="section-desc">سنعاود التواصل معك خلال 24 ساعة.</p>
+        <form onsubmit="e2e(event)" style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+          <label>الاسم<input required style="width:100%" class="btn" /></label>
+          <label>الدور<select class="btn" required><option>منتج</option><option>تقني</option><option>تسويق</option></select></label>
+          <label style="grid-column:1 / -1">نوع المشروع<select class="btn" required><option>لوحة تقارير</option><option>موقع/تطبيق</option><option>أخرى</option></select></label>
+          <label style="grid-column:1 / -1">رسالة<input class="btn" placeholder="مثال: نحتاج لوحات لعرض KPIs"/></label>
+          <div style="grid-column:1 / -1;display:flex;gap:10px;justify-content:flex-end">
+            <button type="button" class="btn" onclick="closeModal()">إلغاء</button>
+            <button class="btn btn-primary" type="submit">إرسال</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="nafs.js"></script>
+</body>
+</html>
+
