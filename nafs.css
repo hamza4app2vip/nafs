@@ -42,6 +42,7 @@
       color:var(--text);
       letter-spacing:.1px;
     }
+    body.modal-open{overflow:hidden}
     [data-theme="light"] body {
       background: radial-gradient(1300px 700px at 75% -15%, rgba(122,162,255,.15), transparent 65%),
                   radial-gradient(1000px 600px at -15% 25%, rgba(0,188,212,.12), transparent 65%),
@@ -367,7 +368,7 @@
     }
     
     #modal:not(.hide) .modal-container {
-      transform: translateY(0) scale(1);
+      transform: translate(-50%, -50%) scale(1);
     }
     
     .modal-backdrop {
@@ -380,30 +381,20 @@
       place-items: center;
       padding: 20px;
       transition: opacity 0.3s ease;
-      overflow-y: auto;
+      overflow-y: hidden;
     }
     
     /* Desktop positioning */
     @media (min-width: 1024px) {
       .modal-backdrop {
-        place-items: start center;
-        padding-top: 80px;
-        padding-inline-start: 40px;
-        padding-inline-end: 40px;
+        place-items: center; padding-top: 40px; padding-inline: 40px;
       }
-      
       .modal-container {
-        transform: translateY(0) scale(0.95);
-        max-width: 800px;
-        width: 100%;
-        display: grid;
+        width: min(92vw, 900px);
         grid-template-columns: 1fr 1fr;
         gap: 24px;
       }
-      
-      #modal:not(.hide) .modal-container {
-        transform: translateY(0) scale(1);
-      }
+      #modal:not(.hide) .modal-container { transform: translate(-50%, -50%) scale(1); }
       
       .modal-sidebar {
         grid-column: 1;
@@ -488,12 +479,16 @@
     }
     
     .modal-container {
-      max-width: 680px;
-      width: 100%;
-      position: relative;
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%) scale(0.95);
       z-index: 101;
-      transform: translateY(20px) scale(0.95);
-      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      width: min(92vw, 800px);
+      max-width: 800px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease;
     }
     
     .modal-panel {
@@ -820,16 +815,8 @@
     
     /* Responsive adjustments for modal */
     @media (max-width: 600px) {
-      .modal-backdrop {
-        padding: 16px;
-        place-items: center;
-        padding-top: 20px;
-      }
-      
-      .modal-container {
-        display: block;
-        transform: translateY(20px) scale(0.95);
-      }
+      .modal-backdrop { padding: 12px; place-items: center; padding-top: 12px; }
+      .modal-container { width: calc(100vw - 24px); transform: translate(-50%, -50%) scale(0.98); }
       
       .modal-sidebar {
         display: none;

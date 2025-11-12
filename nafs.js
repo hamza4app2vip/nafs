@@ -23,8 +23,18 @@
     }));
 
     // Modal
-    function openModal(){ document.getElementById('modal').classList.remove('hide'); }
-    function closeModal(){ document.getElementById('modal').classList.add('hide'); }
+    function openModal(){
+      document.getElementById('modal').classList.remove('hide');
+      document.body.classList.add('modal-open');
+      setTimeout(()=>{
+        const f = document.querySelector('.modal-panel input, .modal-panel select, .modal-panel textarea, .modal-close');
+        if(f && typeof f.focus === 'function') f.focus();
+      }, 10);
+    }
+    function closeModal(){
+      document.getElementById('modal').classList.add('hide');
+      document.body.classList.remove('modal-open');
+    }
     window.openModal = openModal; window.closeModal = closeModal;
 
     function e2e(e){
