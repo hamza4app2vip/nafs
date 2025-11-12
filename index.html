@@ -38,7 +38,26 @@
       </div>
       <div class="actions">
         <button class="btn-ghost btn" id="themeBtn" aria-label="تبديل السمة">🌙/☀️</button>
-        <button class="btn btn-primary" onclick="openModal()">طلب تجربة</button>
+        <button class="btn btn-primary trial-request-btn" onclick="openModal()">
+          <span class="btn-icon-wrapper">
+            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="btnShieldFillA" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#7aa2ff"/>
+                  <stop offset="100%" stop-color="#6ef3ff"/>
+                </linearGradient>
+                <linearGradient id="btnShieldStrokeA" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#bcd0ff"/>
+                  <stop offset="100%" stop-color="#8ccff0"/>
+                </linearGradient>
+              </defs>
+              <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="url(#btnShieldFillA)" opacity="0.22"/>
+              <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" stroke="url(#btnShieldStrokeA)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.7 12.1L11.1 14.5L15.3 10.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="btn-text">طلب تجربة</span>
+        </button>
         <button class="btn-icon menu-btn" id="menuBtn" aria-label="فتح قائمة الجوال">☰</button>
       </div>
     </div>
@@ -63,7 +82,26 @@
       </div>
       <div class="kv" style="gap:10px;margin-top:12px">
         <button class="btn" id="themeBtn2" aria-label="تبديل السمة">🌙/☀️</button>
-        <button class="btn btn-primary" onclick="openModal()">طلب تجربة</button>
+        <button class="btn btn-primary trial-request-btn" onclick="openModal()">
+          <span class="btn-icon-wrapper">
+            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="btnShieldFillB" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#7aa2ff"/>
+                  <stop offset="100%" stop-color="#6ef3ff"/>
+                </linearGradient>
+                <linearGradient id="btnShieldStrokeB" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#bcd0ff"/>
+                  <stop offset="100%" stop-color="#8ccff0"/>
+                </linearGradient>
+              </defs>
+              <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="url(#btnShieldFillB)" opacity="0.22"/>
+              <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" stroke="url(#btnShieldStrokeB)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.7 12.1L11.1 14.5L15.3 10.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="btn-text">طلب تجربة</span>
+        </button>
       </div>
     </div>
   </div>
@@ -246,7 +284,26 @@
         <h3>هل تريد لوحة مماثلة لمشروعك؟</h3>
         <p class="section-desc">واجهة RTL، سريعة ومصقولة. جاهز للتكامل مع باك-إندك.</p>
         <div class="cta">
-          <button class="btn btn-primary" onclick="openModal()">طلب تجربة</button>
+          <button class="btn btn-primary trial-request-btn" onclick="openModal()">
+            <span class="btn-icon-wrapper">
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="btnShieldFillC" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#7aa2ff"/>
+                    <stop offset="100%" stop-color="#6ef3ff"/>
+                  </linearGradient>
+                  <linearGradient id="btnShieldStrokeC" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#bcd0ff"/>
+                    <stop offset="100%" stop-color="#8ccff0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" fill="url(#btnShieldFillC)" opacity="0.22"/>
+                <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" stroke="url(#btnShieldStrokeC)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.7 12.1L11.1 14.5L15.3 10.3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="btn-text">طلب تجربة</span>
+          </button>
           <button class="btn" onclick="scrollTo(0,0)">عودة للأعلى</button>
         </div>
       </div>
@@ -263,26 +320,291 @@
 
   <!-- MODAL -->
   <div id="modal" class="hide" role="dialog" aria-modal="true">
-    <div class="container" style="position:fixed;inset:0;padding:24px;display:grid;place-items:center;background:rgba(0,0,0,.55);backdrop-filter:blur(4px)">
-      <div class="panel tilt" style="max-width:680px;width:100%;position:relative">
-        <button class="btn-icon" style="position:absolute;inset-inline-start:12px;top:12px" onclick="closeModal()" aria-label="إغلاق">✕</button>
-        <h3>طلب تجربة</h3>
-        <p class="section-desc">سنعاود التواصل معك خلال 24 ساعة.</p>
-        <form onsubmit="e2e(event)" style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-          <label>الاسم<input required style="width:100%" class="btn" /></label>
-          <label>الدور<select class="btn" required><option>منتج</option><option>تقني</option><option>تسويق</option></select></label>
-          <label style="grid-column:1 / -1">نوع المشروع<select class="btn" required><option>لوحة تقارير</option><option>موقع/تطبيق</option><option>أخرى</option></select></label>
-          <label style="grid-column:1 / -1">رسالة<input class="btn" placeholder="مثال: نحتاج لوحات لعرض KPIs"/></label>
-          <div style="grid-column:1 / -1;display:flex;gap:10px;justify-content:flex-end">
-            <button type="button" class="btn" onclick="closeModal()">إلغاء</button>
-            <button class="btn btn-primary" type="submit">إرسال</button>
+    <div class="modal-backdrop" onclick="closeModal()"></div>
+    <div class="modal-container">
+      <div class="modal-sidebar">
+        <div class="modal-sidebar-content">
+          <div class="sidebar-illustration">
+            <svg width="240" height="240" viewBox="0 0 240 240" fill="none">
+              <defs>
+                <linearGradient id="sidebarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#6ef3ff;stop-opacity:0.8" />
+                  <stop offset="100%" style="stop-color:#7aa2ff;stop-opacity:0.8" />
+                </linearGradient>
+              </defs>
+              <circle cx="120" cy="120" r="100" stroke="url(#sidebarGradient)" stroke-width="4" stroke-dasharray="10 5" opacity="0.5"/>
+              <circle cx="120" cy="120" r="80" stroke="url(#sidebarGradient)" stroke-width="3" stroke-dasharray="8 6" opacity="0.6"/>
+              <circle cx="120" cy="120" r="60" stroke="url(#sidebarGradient)" stroke-width="2" stroke-dasharray="6 7" opacity="0.7"/>
+              <circle cx="120" cy="120" r="40" fill="url(#sidebarGradient)" opacity="0.2"/>
+              <circle cx="120" cy="120" r="20" fill="url(#sidebarGradient)" opacity="0.4"/>
+            </svg>
           </div>
-        </form>
+          <div class="sidebar-text">
+            <h4>انضم إلى تجربة نَفْس</h4>
+            <p>احصل على وصول مبكر لأقوى لوحة تحليلية في السوق</p>
+            <ul class="sidebar-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                تحليلات متقدمة
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                واجهة سهلة الاستخدام
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                دعم فني متخصص
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-panel">
+        <div class="modal-header">
+          <div class="modal-icon">
+            <svg class="shield-icon" width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="shieldFill" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#7aa2ff"/>
+                  <stop offset="100%" stop-color="#6ef3ff"/>
+                </linearGradient>
+                <linearGradient id="shieldStroke" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#bcd0ff"/>
+                  <stop offset="100%" stop-color="#8ccff0"/>
+                </linearGradient>
+                <filter id="softDrop" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#0a1435" flood-opacity="0.35"/>
+                </filter>
+              </defs>
+              <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z"
+                    fill="url(#shieldFill)" opacity="0.2"/>
+              <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z"
+                    stroke="url(#shieldStroke)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#softDrop)"/>
+              <path d="M8.5 12.2L11 14.7L15.5 10.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="modal-title-section">
+            <h3 class="modal-title">طلب تجربة</h3>
+            <p class="modal-subtitle">انضم إلى قائمة انتظار النسخة التجريبية</p>
+          </div>
+          <button class="btn-icon modal-close" onclick="closeModal()" aria-label="إغلاق">✕</button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-description">سنعاود التواصل معك خلال 24 ساعة لتحديد موعد تجريبي.</p>
+          <form class="modal-form" onsubmit="e2e(event)">
+            <div class="form-section">
+              <h4 class="form-section-title">معلوماتك الشخصية</h4>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">الاسم الكامل <span class="required">*</span></label>
+                  <input type="text" class="form-input" required placeholder="أدخل اسمك الكامل" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">البريد الإلكتروني <span class="required">*</span></label>
+                  <input type="email" class="form-input" required placeholder="example@domain.com" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">الدور الوظيفي <span class="required">*</span></label>
+                  <select class="form-select" required>
+                    <option value="">اختر دورك</option>
+                    <option value="product">مدير منتج</option>
+                    <option value="technical">مطور تقني</option>
+                    <option value="marketing">مسوق</option>
+                    <option value="designer">مصمم</option>
+                    <option value="analyst">محلل بيانات</option>
+                    <option value="other">أخرى</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">الشركة</label>
+                  <input type="text" class="form-input" placeholder="اسم شركتك" />
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-section">
+              <h4 class="form-section-title">تفاصيل المشروع</h4>
+              <div class="form-group full-width">
+                <label class="form-label">نوع المشروع <span class="required">*</span></label>
+                <select class="form-select" required>
+                  <option value="">اختر نوع المشروع</option>
+                  <option value="dashboard">لوحة تقارير</option>
+                  <option value="analytics">تحليل بيانات</option>
+                  <option value="website">موقع/تطبيق</option>
+                  <option value="crm">نظام إدارة علاقات العملاء</option>
+                  <option value="other">أخرى</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label">وصف المشروع <span class="required">*</span></label>
+                <textarea class="form-textarea" rows="4" required placeholder="صفح باختصار طبيعة مشروعك ومتطلباتك..."></textarea>
+              </div>
+            </div>
+            
+            <div class="form-section">
+              <h4 class="form-section-title">تفضيلات التواصل</h4>
+              <div class="form-group full-width">
+                <label class="form-label">الطريقة المفضلة للتواصل</label>
+                <div class="radio-group">
+                  <label class="radio-option">
+                    <input type="radio" name="contact" value="email" checked>
+                    <span class="radio-label">البريد الإلكتروني</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="contact" value="phone">
+                    <span class="radio-label">الهاتف</span>
+                  </label>
+                  <label class="radio-option">
+                    <input type="radio" name="contact" value="meeting">
+                    <span class="radio-label">اجتماع عبر الإنترنت</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-actions">
+              <button type="button" class="btn btn-outline" onclick="closeModal()">إلغاء</button>
+              <button class="btn btn-primary" type="submit">إرسال الطلب</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 
+  <style>
+    /* Elegant sun/moon toggle - glow sweep effect (no bubble) */
+    .theme-toggle{all:unset;position:relative;display:inline-grid;place-items:center;cursor:pointer;
+      --tt-w:72px;--tt-h:36px;--tt-p:3px;--glow-shift:0px;
+      width:var(--tt-w);height:var(--tt-h);border-radius:calc(var(--tt-h)/2);padding:var(--tt-p);
+      border:1px solid var(--stroke);background:linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.02)), var(--glass);
+      box-shadow: 0 6px 18px rgba(10, 20, 60, .28), inset 0 1px 0 rgba(255,255,255,.25), inset 0 -1px 0 rgba(0,0,0,.14);
+      backdrop-filter: saturate(160%) blur(8px);
+      transition:filter .25s ease, transform .2s ease, background .25s ease, box-shadow .25s ease}
+    .theme-toggle:active{transform:scale(.98)}
+    .theme-toggle:focus-visible{outline:0;box-shadow:0 0 0 3px rgba(122,162,255,.35), inset 0 1px 0 rgba(255,255,255,.6)}
+    .theme-toggle .toggle-track{position:absolute;inset:var(--tt-p);border-radius:inherit;overflow:hidden;
+      background:
+        radial-gradient(120% 100% at 20% 20%, rgba(255,255,255,.22), transparent 35%),
+        linear-gradient(180deg, #0a1435 0%, #0e1b47 70%);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.18), inset 0 -8px 18px rgba(0,0,0,.22);
+      transition:background .35s ease, box-shadow .35s ease}
+    .theme-toggle .toggle-track::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,.08), inset 0 10px 18px rgba(255,255,255,.06)}
+    .theme-toggle .toggle-track::after{content:"";position:absolute;top:6px;bottom:6px;left:8px;right:8px;border-radius:999px;pointer-events:none;
+      background:linear-gradient(90deg, rgba(255,255,255,.08) 0%, rgba(255,255,255,.55) 50%, rgba(255,255,255,.08) 100%);
+      opacity:.0;transform:translateX(0);transition:opacity .45s ease, transform .45s cubic-bezier(.2,.8,.2,1)}
+    [data-theme="light"] .theme-toggle .toggle-track{
+      background:
+        radial-gradient(120% 100% at 20% 20%, rgba(255,255,255,.65), transparent 36%),
+        linear-gradient(180deg, #d9ebff 0%, #ffffff 75%);
+      box-shadow: inset 0 2px 0 rgba(255,255,255,.9), inset 0 -10px 18px rgba(30,75,204,.10)
+    }
+    [data-theme="light"] .theme-toggle .toggle-track::after{opacity:.35;transform:translateX(var(--glow-shift))}
+    /* Glow halo (replaces bubble) */
+    .theme-toggle .glow, .theme-toggle .thumb{position:absolute;top:var(--tt-p);left:var(--tt-p);
+      width:calc(var(--tt-h) - var(--tt-p)*2);height:calc(var(--tt-h) - var(--tt-p)*2);border-radius:50%;
+      background:radial-gradient(60% 60% at 50% 50%, rgba(255,255,255,.85) 0%, rgba(255,255,255,.35) 55%, rgba(255,255,255,0) 72%);
+      filter:blur(8px) saturate(120%);
+      transform:translateX(var(--glow-shift));opacity:.8;transition:transform .5s cubic-bezier(.2,.8,.2,1), opacity .35s ease}
+    [data-theme="dark"] .theme-toggle .glow, [data-theme="dark"] .theme-toggle .thumb{background:radial-gradient(60% 60% at 50% 50%, rgba(144,170,255,.85) 0%, rgba(144,170,255,.25) 55%, rgba(144,170,255,0) 72%)}
+    [data-theme="light"] .theme-toggle{--glow-shift:calc(var(--tt-w) - var(--tt-h))}
+    /* Sun & Moon decorations inside track */
+    .theme-toggle .sun,.theme-toggle .moon{position:absolute;top:50%;width:18px;height:18px;border-radius:50%;
+      transform:translateY(-50%) scale(1);transition:opacity .4s ease, transform .4s ease, filter .4s ease}
+    .theme-toggle .sun{inset-inline-start:9px;background:radial-gradient(circle at 30% 30%, #fff9c2 0%, #ffd166 55%, #ffae00 100%);
+      box-shadow:0 0 0 2px rgba(255,209,102,.35), 0 0 18px rgba(255,174,0,.35)}
+    .theme-toggle .sun::before{content:"";position:absolute;inset:-6px;border-radius:50%;
+      background:conic-gradient(from 0deg, rgba(255,200,0,0) 0 10deg, rgba(255,200,0,.6) 10deg 20deg, rgba(255,200,0,0) 20deg 30deg, rgba(255,200,0,.6) 30deg 40deg, rgba(255,200,0,0) 40deg 50deg, rgba(255,200,0,.6) 50deg 60deg, rgba(255,200,0,0) 60deg 70deg, rgba(255,200,0,.6) 70deg 80deg, rgba(255,200,0,0) 80deg 90deg, transparent 90deg 360deg);
+      filter:blur(.6px);opacity:.8;animation:spin-slow 12s linear infinite}
+    .theme-toggle .moon{inset-inline-end:9px;background:radial-gradient(circle at 35% 30%, #f1f6ff 0%, #c8d8ff 55%, #a6b9ff 100%);
+      box-shadow:inset -3px -3px 8px rgba(30,60,120,.35), 0 0 12px rgba(122,162,255,.35)}
+    .theme-toggle .moon::before,.theme-toggle .moon::after{content:"";position:absolute;border-radius:50%;background:rgba(30,45,90,.25);filter:blur(.2px)}
+    .theme-toggle .moon::before{width:5px;height:5px;left:3px;top:6px;box-shadow:8px -2px 0 2px rgba(30,45,90,.2), 10px 6px 0 1px rgba(30,45,90,.25), 2px 10px 0 1px rgba(30,45,90,.18);opacity:.8}
+    .theme-toggle .moon::after{width:3px;height:3px;right:4px;bottom:7px;box-shadow:-6px -4px 0 1px rgba(30,45,90,.2), -10px 2px 0 1px rgba(30,45,90,.18);opacity:.75}
+    .theme-toggle .stars{position:absolute;inset:0; pointer-events:none;
+      background:radial-gradient(1px 1px at 22% 30%, #e6f0ff 50%, transparent 51%),
+                 radial-gradient(1px 1px at 65% 65%, #d8e6ff 50%, transparent 51%),
+                 radial-gradient(1px 1px at 78% 25%, #ffffff 50%, transparent 51%),
+                 radial-gradient(1px 1px at 40% 80%, #b3ccff 50%, transparent 51%),
+                 radial-gradient(1px 1px at 55% 40%, #e6f0ff 50%, transparent 51%);
+      background-repeat:no-repeat;opacity:0;transform:scale(.98);transition:opacity .5s ease, transform .5s ease}
+    @keyframes twinkle{0%,100%{opacity:.6}50%{opacity:1}}
+    @keyframes spin-slow{to{transform:rotate(1turn)}}
+    [data-theme="dark"] .theme-toggle .stars{opacity:.9;animation:twinkle 1.8s ease-in-out infinite alternate}
+    [data-theme="light"] .theme-toggle .stars{opacity:0}
+    [data-theme="light"] .theme-toggle .sun{opacity:1;filter:drop-shadow(0 0 8px rgba(255,174,0,.45));transform:translateY(-50%) scale(1)}
+    [data-theme="light"] .theme-toggle .moon{opacity:.25;transform:translateY(-50%) scale(.9);filter:none}
+    [data-theme="dark"] .theme-toggle .sun{opacity:.2;transform:translateY(-50%) scale(.9);filter:none}
+    [data-theme="dark"] .theme-toggle .moon{opacity:1;filter:drop-shadow(0 0 10px rgba(122,162,255,.45));transform:translateY(-50%) scale(1)}
+    /* Balanced movement — halo only */
+    @media (prefers-reduced-motion: reduce){.theme-toggle, .theme-toggle *{transition:none!important;animation:none!important}}
+  </style>
   <script src="nafs.js"></script>
+  <script>
+    (function () {
+      var body = document.body;
+      var KEY = 'theme';
+      function makeToggle(id) {
+        var btn = document.createElement('button');
+        btn.className = 'theme-toggle';
+        btn.type = 'button';
+        btn.id = id === 'themeBtn2' ? 'themeToggleMobile' : 'themeToggle';
+        btn.setAttribute('aria-label', 'تبديل النمط');
+        btn.setAttribute('aria-pressed', 'false');
+        btn.innerHTML = '\n          <span class="toggle-track" aria-hidden="true">\n            <span class="sun"></span>\n            <span class="moon"></span>\n            <span class="stars"></span>\n          </span>\n          <span class="thumb"></span>\n        ';
+        return btn;
+      }
+      function replaceOldButtons() {
+        var b1 = document.getElementById('themeBtn');
+        if (b1) b1.replaceWith(makeToggle('themeBtn'));
+        var b2 = document.getElementById('themeBtn2');
+        if (b2) b2.replaceWith(makeToggle('themeBtn2'));
+      }
+      function getPreferredTheme() {
+        try {
+          var saved = localStorage.getItem(KEY);
+          if (saved === 'light' || saved === 'dark') return saved;
+        } catch (e) {}
+        var attr = body.getAttribute('data-theme');
+        if (attr === 'light' || attr === 'dark') return attr;
+        if (window.matchMedia) {
+          return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        return 'dark';
+      }
+      function applyTheme(theme) {
+        body.setAttribute('data-theme', theme);
+        try { localStorage.setItem(KEY, theme); } catch (e) {}
+        var pressed = theme === 'light';
+        var t1 = document.getElementById('themeToggle');
+        var t2 = document.getElementById('themeToggleMobile');
+        if (t1) t1.setAttribute('aria-pressed', String(pressed));
+        if (t2) t2.setAttribute('aria-pressed', String(pressed));
+      }
+      function wireHandlers() {
+        function onClick() {
+          var next = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          applyTheme(next);
+        }
+        var t1 = document.getElementById('themeToggle');
+        var t2 = document.getElementById('themeToggleMobile');
+        if (t1) t1.addEventListener('click', onClick);
+        if (t2) t2.addEventListener('click', onClick);
+      }
+      replaceOldButtons();
+      applyTheme(getPreferredTheme());
+      wireHandlers();
+    })();
+  </script>
 </body>
 </html>
 
